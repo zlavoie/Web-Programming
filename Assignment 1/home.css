@@ -1,0 +1,151 @@
+@media only screen and (min-width: 800px) {
+/* for desktops */
+hr {
+    width: 80%;
+    border-color: #53188C;
+    background-color: #53188C;
+    height: 2px;
+    font-family: fantasy
+}
+a:hover   {
+    color:gray;
+    font-style:italic
+}
+a {
+    text-decoration: none;
+    color: #53188C;
+}
+table {
+    border-spacing: 0px;
+}
+.menu {
+    text-align: center;
+    border: 0;
+    border-spacing: 20px;
+    background-color: #F5F5F5;
+    vertical-align: text-top;
+}
+.menubar {
+    text-align: center;
+    border: 0;
+    background-color: #F5F5F5;
+    vertical-align: text-top;
+    width: 8%;
+}
+    li.lefty{
+        text-align: left;
+    }
+    ul.lefty{
+        text-align: left;
+    }
+    p.left{
+        text-align: left;
+        margin-left: 40px;
+    }
+    p.center{
+        text-align: center;
+    }
+p{
+    text-align: left;
+}
+    .special{
+        align-content: center;
+        text-align: center;
+        margin-left:340px;
+    }
+.header {
+    font-family: Georgia, serif;
+    align-content: center;
+    background-color: #53188C;
+    color: white;
+    text-align: center;
+}
+    a:hover.header{
+        color: white;
+    }
+.main{
+    width: 80%;
+}
+.classlist{
+    border-spacing: 20px;
+    text-align: center;
+    align-content: center;
+}
+td {
+    vertical-align: top;
+}
+
+td.main{
+ text-align: center;   
+}
+    td.main2{
+ text-align: center;   
+        border: 2px solid black;
+}
+iframe{
+    display: block;
+}
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+hr {
+    width: 80%;
+    border-color: #53188C;
+    background-color: #53188C;
+    height: 2px;
+    
+}
+a:hover   {
+    color:gray;
+    font-style:italic
+}
+a {
+    text-decoration: none;
+    color: #53188C;
+}
+table {
+    border-spacing: 0px;
+}
+.menu {
+    text-align: center;
+    border: 0;
+    border-spacing: 20px;
+    background-color: #F5F5F5;
+    vertical-align: text-top;
+}
+.menubar {
+    text-align: center;
+    border: 0;
+    background-color: #F5F5F5;
+    vertical-align: text-top;
+    width: 8%;
+}
+p{
+    text-align: left;
+}
+.header {
+    font-family: Georgia, serif;
+    align-content: center;
+    background-color: #53188C;
+    color: white;
+    text-align: center;
+}
+    a:hover.header{
+        color: white;
+    }
+.main{
+    width: 80%;
+}
+.classlist{
+    border-spacing: 20px;
+}
+td {
+    vertical-align: top;
+}
+
+td.main{
+ text-align: center;   
+}
+iframe{
+    display: block;
+}

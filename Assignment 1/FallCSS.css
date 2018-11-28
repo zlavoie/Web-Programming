@@ -1,0 +1,50 @@
+
+
+table.first_year{
+    border-spacing: 3px;
+    vertical-align:top;
+    text-align:center;
+    border-style: groove;
+    border: 2px solid black;
+    width:90%;
+    margin:auto;
+}
+th.first_year{
+    border:1px solid black;
+    border-style: groove;
+    width:auto;
+}
+td.first_year{
+border:1px solid black;
+border-style: groove;
+width:auto;
+}
+tr.first_year0{
+border:1px solid black;
+border-style: groove;
+width:auto;
+background-color:white;
+}
+tr.first_year1{
+border:1px solid black;
+border-style: groove;
+width:auto;
+background-color:#F4EFF7;
+}
+td.credits{
+border:1px solid black;
+border-style: groove;
+width:10%;
+}
+th.first_year_code{
+border:1px solid black;
+border-style: groove;
+width:auto;
+background-color:#DDD9DF;
+}
+
+td.subject{
+border:1px solid black;
+border-style: groove;
+width:20%;
+}

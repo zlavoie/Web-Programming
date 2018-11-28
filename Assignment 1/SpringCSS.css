@@ -1,0 +1,256 @@
+
+/* spring.css */
+
+table.spring_semester{
+vertical-align:top;
+text-align: left;
+text-align:center;
+border-style: groove;
+border:1px solid black;
+width:90%;
+align-content: center;
+margin:auto;
+padding:0;
+}
+h3.lefty{
+    text-align: left;
+}
+th.spring_semester{
+border:1px solid black;
+border-style: groove;
+width:30%;
+padding:0;
+}
+iframe{
+margin-left: 400px;
+}
+tr.spring_semester0{
+border:1px solid black;
+border-style: groove;
+width:30%;
+padding:0;
+}
+tr.spring_semester1{
+border:1px solid black;
+border-style: groove;
+width:auto;
+background-color:#F4EFF7;
+padding:0;
+}
+
+th.spring_semester_code{
+border:1px solid black;
+border-style: groove;
+width:30%;
+padding:0;
+background-color:#DDD9DF;
+}
+td.spring_semester{
+border:1px solid black;
+border-style: groove;
+width:30%;
+padding:0;
+    font-size:medium;
+}
+table.first_year{
+vertical-align:top;
+text-align:left;
+text-align:center;
+border-style: groove;
+border:1px solid black;
+width:90%;
+text-align:center;
+    margin-left: 40px;
+}
+th.first_year{
+border:1px solid black;
+border-style: groove;
+width:auto;
+}
+td.first_year{
+border:1px solid black;
+border-style: groove;
+width:auto;
+}
+tr.first_year0{
+border:1px solid black;
+border-style: groove;
+width:auto;
+    background-color: white;
+    margin-left: 40px;
+}
+tr.first_year1{
+border:1px solid black;
+border-style: groove;
+width:auto;
+background-color:#F4EFF7;
+}
+
+th.first_year_code{
+border:1px solid black;
+border-style: groove;
+    font-weight: normal;
+    font-style: italic; 
+width:auto;
+background-color:#DDD9DF;
+}
+
+table.courses{
+text-align:center;
+border: 2px solid black;
+padding:0px; 
+width:90%; 
+text-align:center;
+text-align:center;
+border-style: groove;
+float:none;
+}
+tr.courses{
+text-align:center;
+   border: 1px solid black;
+padding:0px;
+   font-size:small;
+text-align:center;
+border-style: groove;
+}
+td.courses{
+text-align:center;
+   border: 1px solid black;
+padding:0px;
+   font-size:small;
+text-align:center;
+border-style: groove;
+}
+td.subject{
+border:1px solid black;
+border-style: groove;
+width:20%;
+}
+
+table.courses2{
+text-align:center;
+margin:auto;
+border: 2px solid black;
+padding:0; 
+width:90%; 
+text-align:center;
+align-content:center;
+border-style: groove;
+float:none;
+}
+tr.courses2{
+text-align:center;
+   border: 1px solid black;
+padding:0;
+   font-size:small;
+   text-align:center;
+border-style: groove;
+padding:0;
+}
+td.courses2{
+text-align:center;
+   border: 1px solid black;
+padding:0;
+   font-size:small;
+   text-align:center;
+border-style: groove;
+padding:0;
+background-color: #F4EFF7;
+}
+
+td.courses21{
+text-align:center;
+   border: 1px solid black;
+padding:0;
+   font-size:small;
+   text-align:center;
+border-style: groove;
+padding:0;
+background-color: white;
+}
+
+li.faculty{
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: large;
+    text-align: left;
+    text-decoration-color: purple;
+    color:rebeccapurple;
+}
+
+li.center{
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+        
+}
+iframe.center{
+    align-items: center;
+}
+li.blank{
+    list-style: none;
+    text-align: left;
+    margin-right: 30px;
+}
+
+div.footer {
+   position:absolute;
+    border: 2px;
+    text-align: left;
+   bottom:0;
+   width:auto;
+   height:auto;
+   background:#6cf;
+}
+p.leftalign{
+    text-align: left;
+    margin-left: 40px;
+}
+p.center{
+    align-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h1{
+    text-align: center;
+    align-content: center;
+}
+h2{
+    text-align: left;
+    margin-left: 40px;
+}
+p.special{
+    text-align: center;
+}
+p.rightmarg{
+  margin-right: 40px;  
+}
+
+ul.border{
+    border: 5px solid black;
+    border-style: double;
+    border-spacing: 1px;
+    margin-left: 400px;
+    margin-right:400px;
+}
+ul.wideborder{
+    border: 5px solid black;
+    border-style: double;
+    border-spacing: 1px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+iframe{
+    display: block;
+}
+img.center{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+

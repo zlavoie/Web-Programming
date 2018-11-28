@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+    <title>Bank Account</title>
+  
+    </head>
+<body>
+<link rel="stylesheet" href="jquery-ui.min.css">
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    
+    <div class="outterBox">
+        <div class="floatL">
+    <!-- Button to open the modal -->
+<button class= "button" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+</div>
+        <br><br><br>
+    <div class="babyBox2">
+        <h1>Welcome To The Lavoie Banking System</h1>
+    </div>
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content">
+    <div class="container">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+        
+      <label for="IDNum"><b>Identification Number</b></label>
+      <input type="text" placeholder="Enter Identification Number" name="IDNum" required><br><br>
+      <label for="First"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="First" required><br><br>
+       <label for="Last"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="Last" required><br><br>
+
+        <button class="button" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+        <button type="submit" class="button">Sign Up</button>
+    </div>
+  </form>
+</div>
+    
+    
+    <br><br><br><br><br>
+    <form >
+        <div class="box">
+    <div class="babyBox">
+            <h2>Transaction</h2> </div><br><br><br>
+            <p class="enter">Today's Date: <input type="text" id="txtDate" disabled="disabled" READONLY/></p>
+        <p class="enter">Account ID Number:<input type="number" placeholder="Enter Account ID " id="acctNum" required></p>
+        
+<p class="enter">Enter Account Type: <select class="type" id="type">
+  <option value="Saving">Savings Account</option>
+  <option value="Checking">Checking Account</option>
+  <option value="Bonus">Bonus Account</option>
+</select></p>
+        
+        <p class="enter">Enter Transaction Type: <select class="type" id="trans">
+  <option value="Deposit">Deposit</option>
+            <option value="Withdraw">Withdraw</option></select></p>
+           <p class="enter">Amount: $<input type="number" placeholder="Amount For Transaction" id="amt" required></p>
+        <div class="middle">
+    <button class="button" id="TransBtn" type="button">Submit Transaction</button>
+        </div>
+       </div><br> 
+        </form><br><br>
+    
+
+<button class="accordion">Checking</button>
+<div class="panel">
+  <table id="Check" class="CheckTbl">
+      <p>Final Balance: </p>
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Transaction</th>
+            <th>Date</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<button class="accordion">Savings</button>
+<div class="panel">
+  <table id="Save" class="SavingTbl">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<button class="accordion">Bonus</button>
+<div class="panel">
+  <table id="Bonus" class="BonusTbl">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+        
+
+    
+        
+        </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

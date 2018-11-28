@@ -1,0 +1,52 @@
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:chris
+[logincontroller.py:35 -   __init__() ] password fail:briggs
+[outboxcontroller.py:47 -   __init__() ] HERE WE ARE IN LOG OUT LAND
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:chris
+[logincontroller.py:35 -   __init__() ] password fail:briggs
+[outboxcontroller.py:47 -   __init__() ] HERE WE ARE IN LOG OUT LAND
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:tony
+[logincontroller.py:35 -   __init__() ] password fail:martucci
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie
+[newemailcontroller.py:47 -   __init__() ] Here is your email composition: subject,10,zoe,herewego,zoe
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie
+[newemailcontroller.py:47 -   __init__() ] Here is your email composition: subject,10,zoe,test,zoe
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie
+[newemailcontroller.py:47 -   __init__() ] Here is your email composition: test,[591],zoe,here we go,zoe
+[newemailcontroller.py:47 -   __init__() ] Here is your email composition: test,[759],zoe,jhsfsd,zoe
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie
+[newemailcontroller.py:47 -   __init__() ] Here is your email composition: subject stuff,[582],zoe,here we go,zoe
+[logincontroller.py:34 -   __init__() ] username fail:None
+[logincontroller.py:35 -   __init__() ] password fail:None
+[logincontroller.py:30 -   __init__() ] Username and password are valid, access granted
+[logincontroller.py:34 -   __init__() ] username fail:zoe
+[logincontroller.py:35 -   __init__() ] password fail:lavoie

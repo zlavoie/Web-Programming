@@ -1,0 +1,163 @@
+#!/usr/bin/env python
+import cgi
+import sys
+import Cookie
+import os
+import random
+from bookd
+import logging
+FORMAT = "[%(filename)s:%(lineno)s - %(funcName)10s() ] %(message)s"
+logging.basicConfig(filename='output.log',format=FORMAT)
+logger = logging.getLogger('root')
+logger.setLevel(logging.DEBUG)
+
+#Get all the emails of the user inbox
+def getEmails(userid):
+    result=[]
+    with open((str(userid)+".txt"), 'r') as file:
+        lines = file.readlines()
+
+        for line in lines:
+              email = line.split(',')
+              result.append(email)
+
+    return result
+#If any changes to an email is made, reset the emails
+def setEmails(emails,userid):
+    with open((str(userid)+".txt"), 'w') as file:
+        for email in emails:
+              line=email[0]+","+email[1]+","+email[2]+","+email[3]+","+email[4]
+              file.write(line)
+
+def DeleteEmail(userid,Num,email,emails):
+    #emails = complete list of emails in user inbox
+    #email = specific email that we want to delete
+    #Num = specific email ID number
+    #userid = user who is using system
+    logger.debug('hello')
+    logger.debug('about to write to %s',(str(userid)+'.txt'))
+    with open(str(userid)+'.txt', 'w') as f:
+        logger.debug('got here, opened the file')
+        for emailnum in emails: #so for the amount of emails there are 
+            line=emailnum[0]+","+emailnum[1]+","+emailnum[2]+","+emailnum[3]+","+emailnum[4]
+            logger.debug('Line to write is: %s',line)
+            if (emailnum is not email): #So if it is not the email we want to delete, overwrite inbox file of the user
+                logger.debug('about to save %s',line)
+                f.write(line)
+            else:
+                logger.debug('about to open the trash %s',str(userid)+'trash.txt')
+                with open(str(userid)+"trash.txt",'a') as out: #want to delete this message, write to trash file
+                    logger.debug('about to write to trash %s', line)
+                    out.write(line)
+        
+    print "Content-type: text/html"
+    print
+    print "<!doctype html>"
+    print "<head>"
+    print "<link rel='stylesheet' type='text/css' href='./css/main.css'>"
+    print "<meta http-equiv='Refresh' content='0; url=inbox.py' />"
+    print "</head>"
+    print "<body>"
+    print 
+    print "<p>Please follow <a href='inbox.py'>this link</a></p>"
+    print "</body>"
+    print "</html>"
+    
+    #override zoe file
+    
+#Read the email in Inbox
+def ReadEmail(email):
+    #email[0]=subject
+    #email[1]=specialized id
+    #email[2]=recepient
+    #email[3]=message
+    #email[4]=sender
+    print "Content-type: text/html"
+    print
+    print "<!doctype html>"
+    print "<html>"
+    print "<head>"
+    print "<link rel='stylesheet' type='text/css' href='./css/main.css'>"
+    print "<title>Read Email</title>"
+    print "</head>"
+    print "<br>"
+    print "<div class='outter'>"
+    print "<body class='inbox'>"
+    print "<h1 class='inbox'>Inbox Message</h1>"
+    print "</div>"
+    print "<br>"
+    print "<div class='outter2'>"
+    print "<form id='form' method='post' action='inbox.py'>"
+    print "<p class='trash'><b>From: </b>" + email[4]+"</p>"
+    print "<p class='trash'><b>Subject: </b>"+email[0]+"</p>"
+    print "</div>"
+    print "<br>"
+    print "<textarea rows='20' cols='102' readonly>"
+    print  email[3]
+    print "</textarea>"
+    print "<br>"
+    print "<input type='submit' class='inbox' name='back' value='Back To Inbox'/>"
+    print "</form>"
+    print "</body>"
+    print "</html>"
+
+#Check if the recepient exists
+def isValid(recepient):
+    with open('UserIdPass.txt','r') as file:
+        lines = file.readlines()
+        for line in lines:
+            strings = iter(line.split())
+
+            while True:
+                try:
+                    fileUserId=strings.next()
+                    a=strings.next()
+                    if(recepient==fileUserId):
+                        return True
+                except StopIteration:
+                    break
+    return
+
+#Get specific email for inbox/outbox
+def getEmail(emails,Num):
+   for email in emails:
+        if (email[1]==Num):
+            return email
+   return None
+
+def main():
+    cookie=Cookie.SimpleCookie()
+    cookie_string=os.environ.get('HTTP_COOKIE')
+    cookie.load(cookie_string)
+
+    #Expire old cookies
+    userid=cookie['userid'].value
+    cookie['userid']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+    cookie['userid']=None
+
+    Num = cookie['Num'].value
+    cookie['Num']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+    cookie['Num']=None
+
+    readE = cookie['readE'].value
+    cookie['readE']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+    cookie['readE']=None
+
+    deleteE = cookie['deleteE'].value
+    cookie['deleteE']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+    cookie['deleteE']=None
+
+    newE = cookie['newE'].value
+    cookie['newE']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+    cookie['newE']=None
+
+
+    if(deleteE==str('Delete')):
+        emails=getEmails(userid)
+        email=getEmail(emails,Num)    
+        DeleteEmail(userid,Num,email,emails)
+    elif(readE==str('Read')):
+        emails = getEmails(userid)
+        email=getEmail(emails,Num)    
+        ReadEmail(email)
+main()

@@ -1,0 +1,5 @@
+Dinner Tonight,102,zoe,Do you want to go off campus tonight to grab dinner?,tony
+Help With Programming,13,zoe,Will you come over to the suite tomorrow will you help me with my programming assignment?,chris
+Happy Birthday!,40,zoe,Happy 21st birthday! We should go out and grab drinks later.,tony
+Thai Food,265,zoe,Do you want to go to Ruk Mai down the street to get Pad Thai and maybe some shrimp fried rice?,tony
+Self Note,93,zoe,Remember to finish your email system it is due on Friday for Web Programming,zoe

@@ -1,0 +1,23 @@
+The Talisman, Stephen King, 1111, 0
+The Shining, Stephen King, 2222, 0
+The Stand, Stephen King, 3333, 0
+The Dark Tower, Stephen King, 4444,15
+
+#/#cloud-saucy
+
+542 packages can be updated.
+300 updates are security updates.
+
+
+*** /dev/xvda1 should be checked for errors ***
+
+You have mail.
+Last login: Sun Feb 18 03:06:08 2018 from 204.144.15.30
+********************************************************
+* Welcome to the Stonehill College Computer Science VM *
+* remember to do all your work in the /student folder  *
+* this will allow us to upgrade your vm in the future. *
+*                                                      *
+* Placing you in /student by default                   *
+********************************************************
+ubun

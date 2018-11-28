@@ -1,0 +1,74 @@
+import cgi
+import sys
+import Cookie
+import os
+
+def getdata():
+    formDatcgi.fieldStorage()	
+    specific=form.getvalue('specific')
+    readE=form.getvalue('readE')
+    deleteE=form.getvalue('deleteE')
+    newE=form.getvalue('newE')	
+    
+
+def deleteEmail():
+    print "<p>Delete Email</p>"
+    emails=getEmails()
+    email=getEmail(emails, message)
+    email=None
+    setEmail(emails)
+
+
+
+def readEmail():
+    print "<p>Read Email</p>"
+    emails=getEmails()
+    email=getEmail(emails, message)
+#email[0]=subject
+#email[1]=sender
+#email[2]=recepient
+#email[3]=message
+    #Print Sender Email Address
+    print "<h3> From: "+email[1]+"</br></h3>"
+    print "<h3> To: "+email[2]+"</br></h3>"
+    #Print Subject Header
+    print "<h3 Subject: >"+email[0]+"</br></br></h3>"
+    #print out the message slot of that array
+    print "<p>"+email[3]+"</br></p>"
+
+def newEmail():
+    print "<p>New Email</p>"
+    emails=getEmails()
+    email=getEmail(emails, message)
+    
+
+
+
+def main():
+    #get the cookie
+ #   cookie=Cookie.SimpleCookie()
+  #  cookie_string=os.environ.get('HTTP_COOKIE')
+   # cookie.load(cookie_string)
+#
+ #   userid=cookie['userid'].value
+  #  cookie['userid']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+   # cookie['userid']=None
+#
+ #   recepient = cookie['recepient'].value
+  #  cookie['recepient']['expires']='Thu, 01 Jan 1970 00:00:00 GMT'
+   # cookie['recepient']=None
+    #
+   # deletebutton=request.POST.get('Delete Email')
+   # newbutton=request.POST.get('New Email')
+   # readbutton=request.POST.get('Read Email')
+    button=submit
+    
+    if (button==str(Read Email)):
+        readEmail()
+
+    if (button==str(Delete Email)):
+        deleteEmail()
+
+    if (button==str(New Email)):
+        newEmail()
+main()

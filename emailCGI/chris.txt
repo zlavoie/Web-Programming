@@ -1,0 +1,6 @@
+Ice Cream,39,chris,Would you want to go get Daddy's Dairy on Friday night?,zoe
+Frisbee,10,chris,I am not going to be able to go to frisbee practice on Tuesday night,zoe
+Birthday Gift,138,chris,What should we get Erin for her birthday? I have no clue and I've been looking all over Amazon.,zoe
+Clean the Suite,273,chris,Can we all just take an hour and clean the suite tonight? It is a mess.,tony
+Shirt,98,chris,Can I borrow your dress shirt for my interview tomorrow? Just spilled coffee on mine and do not have time to get another one.,tony
+Computer Science,10,chris,I am bored in class,zoe

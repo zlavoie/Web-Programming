@@ -1,0 +1,5 @@
+Thai Food,265,zoe,Do you want to go to Ruk Mai down the street to get Pad Thai and maybe some shrimp fried rice?,tony
+Clean the Suite,273,chris,Can we all just take an hour and clean the suite tonight? It is a mess.,tony
+Dinner Tonight,102,zoe,Do you want to go off campus tonight to grab dinner?,tony
+Happy Birthday!,40,zoe,Happy 21st birthday! We should go out and grab drinks later.,tony
+Shirt,98,chris,Can I borrow your dress shirt for my interview tomorrow? Just spilled coffee on mine and do not have time to get another one.,tony

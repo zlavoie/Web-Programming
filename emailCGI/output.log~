@@ -1,0 +1,8 @@
+[userdao.py:48 - selectByUserId() ] userid:zoe
+[userdao.py:52 - selectByUserId() ] USER NOT FOUND
+[logincontroller.py:34 -   __init__() ] username fail:tony
+[logincontroller.py:35 -   __init__() ] password fail:martucci
+[userdao.py:48 - selectByUserId() ] userid:zoe
+[userdao.py:52 - selectByUserId() ] USER NOT FOUND
+[logincontroller.py:34 -   __init__() ] username fail:tony
+[logincontroller.py:35 -   __init__() ] password fail:martucci

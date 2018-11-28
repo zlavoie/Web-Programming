@@ -1,0 +1,5 @@
+Groceries, 687,tony,Can you pick me up some rootbeer soda when you run out to Shaw's today? I want it for dinner tonight. Thanks.,chris
+Help With Programming,13,zoe,Will you come over to the suite tomorrow will you help me with my programming assignment?,chris
+Video Games Later,9,tony,Later tonight after homework lets play Mario Kart.,chris
+Black Panthor,349,tony,The guys all agreed that they want to go see the movie tonight. Let's pick a time.,chris
+Target Run,224,tony,Can you pick me up some chips and guac from target when you go?,chris

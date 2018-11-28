@@ -1,0 +1,171 @@
+h1{
+    font-family:Georgia, serif;
+    text-align:center;
+    font-size:40px;
+}
+
+body.login{
+    background:url(loginbackground.jpg);
+}
+
+form.login{
+    margin:0 auto;
+    border:1px solid black;
+    box-sizing:content-box;
+    width:280px;
+    height:110px;
+    padding:5px;
+    text-align:center;
+    font:14px Gadget, sans-serif;
+    font-weight:bold;
+    background-color:white;
+}
+
+form.login2{
+    background-color:white;
+    margin:0 auto;
+    border:1px solid black;
+    box-sizing:content-box;
+    width:280px;
+    height:110px;
+    padding:5px;
+    text-align:center;
+    font:14px Gadget, sans-serif;
+    font-weight:bold;
+}
+
+h3.login2{
+    font-family:Gadget,sans-serif;
+    text-align:center;
+    font-size:20px;
+}
+
+h3.login{
+    align-self:cemter;
+    text-align:center;
+    font-family:Gadget,sans-serif;
+    text-align:center;
+    font-size:20px;
+}
+
+h1.inbox{
+    font-style:oblique;
+    font-family:Georgia, serif;
+    text-align:center;
+    font-size:40px;
+    background-color: rgba(255,255,255,.5);
+}
+
+h3.inbox{
+    text-align:center;
+    font-size:20px;
+    font-family:arial;
+    font-style:oblique;
+    background-color: rgba(255,255,255,.5);
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+
+p.inbox{
+    text-align:center;
+    font-size:23px;
+    text-decoration:none;
+    margin:0 auto;
+    width:300px;
+}
+
+
+form.inbox{
+    font-size:18px;
+}
+
+.message0{
+    border:.2px solid black;
+    border-spacing:0px;
+    padding:0px;
+    text-align:left;
+    background-color:#fff2cc;
+    margin:0 auto;
+    width:600px;
+}
+.message1{
+    text-align:left;
+    margin:0 auto;
+    width:600px;
+    border:.2px solid black;
+    border-spacing:0px;
+    padding:0px;
+    background-color:#ffebad;
+}
+
+
+p.trash{
+    background-color: rgba(255,255,255,.5);
+    width:740px;
+    border:.2px dotted black;
+    text-align:left;
+    font-size:18px;
+    margin:0 auto;
+}
+
+
+p.center{
+    background-color: rgba(255,255,255,.5);
+    width:740px;
+    border:.2px dotted black;
+    text-align:center;
+    font-size:18px;
+    margin:0 auto;
+}
+
+.outter{
+    margin:0 auto;
+    border:2px solid black;
+    margin:0 auto;
+    width:400px;
+    text-align:center;
+    align-content:center;
+}
+
+.outter2{
+    margin:0 auto;
+    border:4px solid black;
+    margin:0 auto;
+    width:740px;
+    border-style:double;
+}
+
+input.inbox{
+    border-radius:15px;
+    padding:10px;
+    color:white;
+    background-color:#4B4851;
+    text-weight:bold;
+    font-size:16px;
+}
+
+.inputr{
+    border-radius:10px;
+    color:blue;
+    background-color:purple;
+}
+
+input.login{
+    padding:40px;
+}
+
+.inbox{
+    text-align:center;
+    align-content:center;
+    margin:0 auto;
+		   
+}
+
+body.inbox{
+    background:url(floralbackground.jpg);
+    z-index:1;
+}

@@ -1,0 +1,236 @@
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[app.py:1423 - log_exception() ] Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 33, in login
+    return inbox()
+  File "zmail.py", line 80, in inbox
+    dao=InboxDao()
+  File "/student/zmailFlaskDB/inboxdao.py", line 26, in __init__
+    self.table3=self.db2['IdNum']
+AttributeError: InboxDao instance has no attribute 'db2'
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:19:47] "POST /login HTTP/1.1" 500 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:37] "POST /login HTTP/1.1" 200 -
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:37] "GET /static/floralbackground.jpg HTTP/1.1" 304 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:40] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:41] "GET /outbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:44] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:44] "GET /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:49] "POST /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:50] "POST /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[zmail.py:211 -      trash() ] deleting in the Trash area
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:53] "POST /trash HTTP/1.1" 302 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:53] "GET /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:54] "POST /trash HTTP/1.1" 302 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:55] "GET /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:56] "POST /inbox HTTP/1.1" 302 -
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:21:56] "GET /newMessage HTTP/1.1" 200 -
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:22:09] "POST /newMessage HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:22:09] "GET /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:22:13] "POST /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:22:14] "POST /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[zmail.py:157 -     outbox() ] deleting out of the outbox area
+[app.py:1423 - log_exception() ] Exception on /outbox [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 158, in outbox
+    return deleteOutbox(Num)
+  File "zmail.py", line 172, in deleteOutbox
+    dao.deleteOutbox(email)
+  File "/student/zmailFlaskDB/outboxdao.py", line 79, in deleteOutbox
+    self.table2.insert(self.emailToRow(email))
+AttributeError: OutboxDao instance has no attribute 'table2'
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:22:17] "POST /outbox HTTP/1.1" 500 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:35:28] "POST /login HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:35:29] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:35:29] "GET /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[zmail.py:157 -     outbox() ] deleting out of the outbox area
+[app.py:1423 - log_exception() ] Exception on /outbox [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 158, in outbox
+    return deleteOutbox(Num)
+  File "zmail.py", line 172, in deleteOutbox
+    dao.deleteOutbox(email)
+  File "/student/zmailFlaskDB/outboxdao.py", line 80, in deleteOutbox
+    dao.insertTrash(self.emailToRow(email))
+  File "/student/zmailFlaskDB/trashdao.py", line 83, in insertTrash
+    self.table2.insert(self.emailToRow(email))
+  File "/student/zmailFlaskDB/trashdao.py", line 32, in emailToRow
+    row = dict(subject=email.subject, Num=email.Num, recepient=email.recepient, message=email.message,sender=email.sender)
+AttributeError: 'dict' object has no attribute 'subject'
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:35:32] "POST /outbox HTTP/1.1" 500 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:20] "POST /login HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:22] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:22] "GET /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[zmail.py:157 -     outbox() ] deleting out of the outbox area
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:25] "POST /outbox HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:25] "GET /outbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:28] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:28] "GET /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[zmail.py:211 -      trash() ] deleting in the Trash area
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:31] "POST /trash HTTP/1.1" 302 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:31] "GET /trash HTTP/1.1" 200 -
+[zmail.py:196 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:32] "POST /trash HTTP/1.1" 302 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:36:32] "GET /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[app.py:1423 - log_exception() ] Exception on /inbox [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 90, in inbox
+    return readInbox(Num,types)
+NameError: global name 'types' is not defined
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:37:28] "POST /inbox HTTP/1.1" 500 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:44:48] "POST /login HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:44:53] "POST /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:44:55] "POST /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:44:57] "POST /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:44:59] "POST /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:00] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:01] "GET /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:06] "POST /outbox HTTP/1.1" 200 -
+[zmail.py:142 -     outbox() ] in the outbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:09] "POST /outbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:10] "POST /inbox HTTP/1.1" 302 -
+[zmail.py:194 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:11] "GET /trash HTTP/1.1" 200 -
+[zmail.py:194 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:11] "POST /trash HTTP/1.1" 302 -
+[zmail.py:194 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:12] "GET /trash HTTP/1.1" 200 -
+[zmail.py:194 -      trash() ] made it to the trash
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:13] "POST /trash HTTP/1.1" 302 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:100 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:13] "GET /inbox HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[app.py:1423 - log_exception() ] Exception on /inbox [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 93, in inbox
+    return delete(Num)
+  File "zmail.py", line 74, in delete
+    email=dao.selectByNum(Num,types)
+TypeError: selectByNum() takes exactly 2 arguments (3 given)
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:45:20] "POST /inbox HTTP/1.1" 500 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[zmail.py:99 -      inbox() ] In the Inbox
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:47:12] "POST /login HTTP/1.1" 200 -
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[inboxdao.py:20 -   __init__() ] here is the connectString: sqlite:///zoeemails.db
+[app.py:1423 - log_exception() ] Exception on /inbox [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "zmail.py", line 92, in inbox
+    return delete(Num)
+  File "zmail.py", line 74, in delete
+    dao.delete(email)
+  File "/student/zmailFlaskDB/inboxdao.py", line 82, in delete
+    self.table2.insert(self.emailToRow(email))
+AttributeError: InboxDao instance has no attribute 'table2'
+[_internal.py:87 -       _log() ] 204.144.15.30 - - [05/Apr/2018 19:47:15] "POST /inbox HTTP/1.1" 500 -

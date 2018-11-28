@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}" />
+<title>Outbox</title>
+</head>
+<html>
+<body class="inbox">
+<br>
+<div class="outter">
+<h1 class="inbox">Outbox</h1>
+<h3 class="inbox">Messages Sent</h3>
+</div>
+<br>
+<form class="inbox" id="out2" action="{{url_for('inbox')}}" method="post">
+ <div class="input">
+ <br>
+ <input type="submit" class="inbox" id="Outbox" name="outbox" value="Outbox"/>
+ <input  type="submit" class="inbox" id="Inbox" name="inbox" value="Inbox"/>
+ <input  type="submit" class="inbox" id="Trash" name="trash" value="Trash"/>
+ <br>
+ <br>
+ </form>
+<form class="inbox" id="out" method="post" action="{{url_for('outbox')}}">
+{% for email in emails %}
+ <div class="message0">
+ <input type="radio"  name="Num" value="{{email.Num}}" class='inputr'>To: {{email.sender}} </br>&emsp;&emsp;<b> Subject: </b> {{email.subject}}</div>
+{% endfor %}
+ <div class="input">
+ <br>
+ <input type="submit" class="inbox" id="Read_Email" name="readE" value="Read"/>
+ <input  type="submit" class="inbox" id="Delete_Email" name="deleteE" value="Delete"/>
+ <input  type="submit" class="inbox" id="New_Email" name="newE" value="Compose"/>
+ <br>
+ <br>
+ <br>
+ <input type="submit" class="inbox" id="LogOutE" value="Logout" name="LogE"/>
+ </div>
+</form>
+</body>
+</html>

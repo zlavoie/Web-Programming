@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+<body class="login">
+  <h1>Welcome to Zmail Email System!</h1>
+  <h3 class="login">Enter Your Information Below:</h3>
+<form id="form" method="post" class="login2">
+<p class="login2">Username:   <input type="text" name="userid" /> </p>
+<p class="login2">Password: <input type="password" name="password" /> </p>
+<input type="submit" name="submit" value="submit">
+
+<h3 class="login2">New User? SIgn Up Below: </h3>
+<div class="login2">
+  <p class="login2"> New User ID:      <input type="text" name="useridNew"/></p>
+  <p class="login2">New Password:  <input type="password" name="passwordNew"/></p>
+  <input class="submit2" type="submit" name="submit2" value="Submit" />
+</div>
+</form>
+</body>
+</html>

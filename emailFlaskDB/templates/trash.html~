@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}" />
+<title>Trash</title>
+</head>
+<html>
+<body class="inbox">
+<br>
+<div class="outter">
+<h1 class="inbox">Trash</h1>
+<h3 class="inbox">Discarded Messages</h3>
+</div>
+<br>
+<form class="inbox" id="form2" action="{{url_for('trash')}}" method="post">
+ <div class="input">
+ <br>
+ <input type="submit" class="inbox" id="Outbox" name="outbox" value="Outbox"/>
+ <input  type="submit" class="inbox" id="Inbox" name="inbox" value="Inbox"/>
+ <input  type="submit" class="inbox" id="Trash" name="trash" value="Trash"/>
+ <br>
+ <br>
+ </form>
+<form class="inbox" id="form" method="post" action="{{url_for('inbox')}}">
+{% for email in emails %}
+ <div class="message0">
+ <input type="radio"  name="Num" value="{{email.Num}}" class='inputr'>From: {{email.sender}} </br>&emsp;&emsp;<b> Subject: </b> {{email.subject}}</div>
+{% endfor %}
+ <div class="input">
+ <br>
+ <input type="submit" class="inbox" id="Read_Email" name="readE" value="Read"/>
+ <input  type="submit" class="inbox" id="Delete_Email" name="deleteE" value="Delete"/>
+ <br>
+ <br>
+ <br>
+ <input type="submit" class="inbox" id="LogOut" value="Logout" name="Logout"/>
+ </div>
+</form>
+</body>
+</html>

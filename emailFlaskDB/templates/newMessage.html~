@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='./css/main.css'>
+<title>Compose Message</title>
+</head>
+<br>
+<div class='outter'>
+<body class='inbox'>
+<h1 class='inbox'>Compose Message</h1>
+</div>
+<br>
+<form id='form' method='post'>
+<p class='trash'><b>Subject: </b> <input type='text' name='subject'/></p>
+<p class='trash'><b>To: </b> <input type='text' name='recepient'/></p>
+<p class='center'><b>Message</b><textarea name='new_message' rows='20' cols='100' spellcheck='True'></textarea></p>
+<br>
+<input type='submit'  class='inbox' name='submit' value='Send' />
+<input type='submit' name='back' class='inbox' value='Back To Inbox'/>
+</form>
+</body>
+</html>        
+
+

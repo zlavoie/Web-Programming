@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="styles.css">
+    <title>Bank Account</title>
+</head>
+<body>
+<div class="outterBox">
+    <div class="babyBox2">
+<h1>Welcome To The Lavoie Banking System</h1>
+    </div>
+    <br><br><br><br><br><br>
+    <p><b>First Insert Account Number: </b><input type="number" id="Account">&nbsp;&nbsp;<button class="button" id="AccountBtn">Submit</button> </p>
+    <div class="babyBox">
+<h2>Checking Account</h2>
+        </div><br><br><br><br>
+    <div class="box">
+    <p>Account Type: <input type="text" id="acctNumC" readonly> </p>
+    <p>Balance: $<input type="number" id="BalanceC"  readonly></p>
+<p>Deposit: $<input type="number" id="DepositC"> <button class="button" id="DepositBtnC">Submit Deposit</button><br><br>Withdraw: $<input type="number" id="WithdrawalC"> <button class="button" id="WithdrawalBtnC"> Submit Withdrawal</button></p>
+</div><br>
+<div class="babyBox">
+            <h2>Savings Account</h2>
+    </div><br><br><br><br>
+    <div class="box">
+    <p>Account Type: <input type="text" id="acctNumS" readonly> </p>
+    <p>Balance: $<input type="number" id="BalanceS"  readonly></p>
+<p>Deposit: $<input type="number" id="DepositS"> <button class="button" id="DepositBtnS">Submit Deposit</button><br><br>Withdraw: $<input type="number" id="WithdrawalS"> <button class="button" id="WithdrawalBtnS"> Submit Withdrawal</button></p>
+</div><br>
+<div class="babyBox">    
+    <h2>Bonus Account</h2>
+    </div><br><br><br><br>
+    <div class="box">
+    <p>Account Type: <input type="text" id="acctNumB" readonly> </p>
+    <p>Balance: $<input type="number" id="BalanceB"  readonly></p>
+<p>Deposit: $<input type="number" id="DepositB"> <button class="button" id="DepositBtnB">Submit Deposit</button><br><br>Withdraw: $<input type="number" id="WithdrawalB"> <button class="button" id="WithdrawalBtnB"> Submit Withdrawal</button></p>
+</div>
+ </div>
+<br>
+    <div class="middle">
+    <button class="button" id="StatementBtn" type="button">End of Month Statement</button>
+        </div>
+        <div id="d3">
+            <div class="statementBox">
+                <h1 class="white">Monthly Statement</h1>
+                <div class="babyBox1">       
+        <h2 id="Checktitle"></h2> 
+        <p id="InitialCheck"></p>
+        <ul id="statementC" class="left"></ul>
+                    </div>
+                
+                <div class="babyBox1">
+        <h2 id="Savetitle"></h2>
+        <ul id="InitialSave" class="left"></ul>
+        <p id="statementS"></p>
+                </div>
+                <div class="babyBox1">
+        <h2 id="Bonustitle"></h2>
+        <ul id="InitialBonus" class="left"></ul>
+        <p id="statementB"></p>
+                </div>
+                
+            </div>
+        </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+</head>
+<body class="boston">
+<br>
+<div class="boxy521">
+  <div class="boxy125">
+<h2 class="task">Task Description</h2>
+</div>
+<br>
+<form id="form" method="post">
+  <p class="examine"><b>Title:</b> {{selected.task}}</p>
+  <p class="examine"><b>Description:</b> {{selected.description}}</p>
+  <p class="examine"><b>Category:</b> {{selected.category}}</p>
+  <p class="examine"><b>Due Date:</b> {{selected.duedate}}</p>
+<button type="submit" class="tasklist123" name="back">Back to TaskList</button>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index.css')}}"/>
+<title>New Task</title>
+</head>
+<br>
+<body class="background9">
+<div class="boxy"><h1 class="center">Ready To Create A New Task?</h1></div>
+<br>
+<form id="form" method="post">
+  <div class="boxy1">
+<p class="center"><b>Task:</b> <input type="text" name="task"/></p>
+<p class="center"><b>Due Date:</b> <input id="date" type="date" name="duedate"/></p>
+<p class="center"><b>Set Priority:</b><select  name="priority"><option name="p" value="1">1</option><option  name="p" value="2">2</option><option name="p" value="3">3</option><option name="p" value="4">4</option><option name="p" value="5">5</option></select></p>
+<p class="center"><b>Category:</b> <select name="drop"><option name="category" value="School">School</option><option name="category" value="Work">Work</option><option name="category" value="Personal">Personal</option><option name="category" value="Home">Home</option></select></p>
+
+<p class="center"><b>Description:</b><br><textarea name="description" rows="10" cols="60" spellcheck="True"></textarea></p>
+<br>
+</div>
+<div class="button2"><button type="submit" class="addtask" name="submit"/>Submit Task</button></div>
+</form>
+</body>
+</html>        
+
+

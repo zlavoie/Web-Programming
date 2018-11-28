@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<link rel = 'stylesheet'  href = "{{ url_for('static', filename='index.css') }}" />
+</head>
+<html>
+  <body class="background1">
+    <div class="box3">
+
+    {% if error==2 %}
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Password do not match! Please Try Again.
+      </div>
+    {% endif %}
+    {% if error==1 %}
+    
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Username already taken. Please Try Again.
+      </div>
+    {% endif %}
+
+<form id="fogrm" method="post">  
+      <h1>New User Registration</h1>
+
+  <p class="Register"><b>New Username</b></p>   <input type="text" placeholder="Enter Desired Username" class="Register" name="newuserid" />
+      <p class="Register"><b>New Password</b></p> <input type="password" placeholder="Enter Desired Password" class="Register" name="newpassword" />
+      <p class="Register"><b>Retype Password</b> </p><input type="password" placeholder="Enter Password Again" class="Register"  name="verifypassword" /> 
+  
+      <button type="submit" class="register" name="Register">Register</button>
+      <button type="submit" class="register" name="Login">Back To Login</button><br><br><br><br><br><br>
+    </form>
+</div>
+  </body>
+</html>

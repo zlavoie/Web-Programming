@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+<link rel = 'stylesheet'  href = "{{ url_for('static', filename='index.css') }}" />
+</head>
+<html>
+  <body class="background1">
+    <div class="box">
+
+<form id="fogrm" method="post">  
+      <h1>Planner Login</h1>
+
+  <p class="login"><b>Userid:</b>   <input type="text" placeholder="Enter Username" name="userid" /> </p>
+  <p class="login"><b>Password:</b> <input type="password" placeholder="Enter Password" name="password" /> </p><button type="submit" class="login" name="login">Log In</button>
+      <p class="login2"><b>New User?</b></p><br>
+      <button type="submit" class="login2" name="SignUp">Sign Up</button>
+<br><br><br>
+    </div>
+    </form>
+</body>
+</html>
